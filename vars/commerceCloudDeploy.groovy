@@ -12,7 +12,9 @@ def call(buildName, dbUpdateMode, environmentId, strategy) {
             echo "$deploy"
             deploy_result = readJSON text: "$deploy"
             deploy_code = deploy_result["code"]
-            return deploy_code
-        }
+            return deploy_code     
+            }
+            echo "deploy S1 build only"
     }
 }
+
