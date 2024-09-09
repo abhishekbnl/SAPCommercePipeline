@@ -19,7 +19,7 @@ pipeline {
     options {
         skipDefaultCheckout(true) // No more 'Declarative: Checkout' stage
     }
-
+    
     stages {
         stage('Prepare') {
             steps {
